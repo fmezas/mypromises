@@ -1,0 +1,31 @@
+{
+  "name": "mypromises",
+  "version": "1.0.0",
+  "description": "Promises/A+ implementation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mypromises",
+    "promises",
+    "aplus"
+  ],
+  "author": "Francisco Meza",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^0.24.0",
+    "mocha": "^1.18.0",
+    "mocha-phantomjs": "^3.5.0",
+    "node-libs-browser": "^0.5.2",
+    "phantomjs": "^1.9.9",
+    "promises-aplus-tests": "calvinmetcalf/promises-tests#phantom",
+    "webpack": "^1.10.1"
+  },
+  "scripts": {
+    "eslint": "eslint lib/*.js",
+    "test": "eslint lib/*.js && mocha -R nyan ./test/main.js",
+    "node": "mocha -R spec ./test/main.js",
+    "browser": "webpack test/main.js > test/browser.js && mocha-phantomjs test/test.html"
+  }
+}

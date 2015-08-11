@@ -31,8 +31,12 @@ function mocha(_adapter) {
   require("../node_modules/promises-aplus-tests/lib/tests/2.2.3");
   require("../node_modules/promises-aplus-tests/lib/tests/2.2.4");
   require("../node_modules/promises-aplus-tests/lib/tests/2.2.5");
-  // require("../node_modules/promises-aplus-tests/lib/tests/2.2.6");
-  // require("../node_modules/promises-aplus-tests/lib/tests/2.2.7");
+  require("../node_modules/promises-aplus-tests/lib/tests/2.2.6");
+  require("../node_modules/promises-aplus-tests/lib/tests/2.2.7");
+  require("../node_modules/promises-aplus-tests/lib/tests/2.3.1");
+  require("../node_modules/promises-aplus-tests/lib/tests/2.3.2");
+  require("../node_modules/promises-aplus-tests/lib/tests/2.3.3");
+  require("../node_modules/promises-aplus-tests/lib/tests/2.3.4");
   delete global.adapter;
 }
 

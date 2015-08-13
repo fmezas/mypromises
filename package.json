@@ -2,10 +2,8 @@
   "name": "mypromises",
   "version": "1.0.0",
   "description": "Promises/A+ implementation",
+  "homepage": "https://github.com/fmezas/mypromises",
   "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "mypromises",
     "promises",

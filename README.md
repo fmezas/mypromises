@@ -9,12 +9,31 @@ You know, the usual:
 ```javascript
 var Promise = require('mypromises');
 
-var p = new Promise(function(onFulfill, onReject) { /* do something with onFulfill and/or onReject here */ });
+var f, r;
+var p = new Promise(function(onFulfill, onReject) {
+  f = onFulfill;
+  r = onReject;
+});
+
+// fulfill with the solution
+f(42);
+// or reject
+// r('boom!');
+
+// and so on...
+// p.then(...);
 ```
 
 ## Motivation
 
-This is just a naive implementation I made to fully understand the Promises/A+ spec
+This is just a naive implementation I wrote to make sure I fully understood the Promises/A+ spec. If you are like me and had trouble following all the promise resolution cases in your head while reading the spec, then examining the code of this implementation might help you.
+
+I've tried to give code clarity priority over any other consideration:
+
+- pure functions except where side effects are expected per the spec (resolving Promise's)
+- objects (Promise's) mostly just contain data
+
+My next step is to optimize for performance. Comments are welcome.
 
 ## Installation
 

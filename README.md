@@ -26,7 +26,7 @@ f(42);
 
 ## Motivation
 
-This is just a naive implementation I wrote to make sure I fully understood the Promises/A+ spec. If you are like me and had trouble following all the promise resolution cases in your head while reading the spec, then examining the code of this implementation might help you.
+This is just a naive implementation I wrote to make sure I fully understood the [Promises/A+ spec](https://promisesaplus.com/). If you are like me and had trouble following all the promise resolution cases in your head while reading the spec, then examining the code of this implementation might help you.
 
 I've tried to give code clarity priority over any other consideration:
 
